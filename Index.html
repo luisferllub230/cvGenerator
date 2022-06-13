@@ -9,8 +9,77 @@
     <title>Cv Generator</title>
 </head>
 <body>
+    <main class="container-md mt-2">
+
+       <div class="card border-1 border-dark">
+            <div class="card-header text-center text-light bg-dark">
+                <h1>Register yourself</h1>
+            </div>
+
+            <div class="card-body">
+                <div class="col-12">
+                    <h3 class="text-center">Complete all items</h3>
+                </div>
+
+                <div class="row">
+                    <!--right-->
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="my-content-right">
+                            <label for="name" >Name:</label>
+                            <input type="text" id="name" placeholder="Your name :)"class="col-12">
+
+                            <label for="lastname" class="mt-2">Last Name:</label>
+                            <input type="text" id="lastname" placeholder="Your Last Name :)" class="col-12">
+
+                            <label for="address" class="mt-2">Address:</label>
+                            <input type="text" id="address" placeholder="Your address" class="col-12">
+
+                            <label for="email" class="mt-2">Email:</label>
+                            <input type="email" id="email" placeholder="Example@email.com" class="col-12">
+
+                            <label for="phone" class="mt-2">Phone:</label>
+                            <input type="text" id="phone" placeholder="000-000-0000" class="col-12">
+
+                            <label for="website" class="mt-2">Your website:</label>
+                            <input type="text" id="website" placeholder="www.yourWebSite.com" class="col-12">
+
+                            <label for="language" class="mt-2">Language:</label>
+                            <input type="text" id="language" placeholder="English, Spanish, russian..." class="col-12">
+                        </div>
+                    </div>
+                    <!--left-->
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="my-content-left">
+                            <label for="jobs" class="mt-2">Jobs:</label>
+                            <input type="text" id="jobs" placeholder="Developer, lawyer, police"class="col-12">
+                            
+                            <label for="educations" class="mt-2">Educations:</label>
+                            <input type="text" id="educations" placeholder="University, highschool, school..." class="col-12">
+
+                            <label for="skills" class="mt-2">Skills:</label>
+                            <input type="text" id="skills" placeholder="Html, Css, js..." class="col-12">
+
+                            <label for="certification" class="mt-2">Certifications:</label>
+                            <input type="text" id="certification" placeholder="Business, Technology, Legal..." class="col-12">
+
+                            <label for="overview" class="mt-2">My overview:</label><br>
+                            <textarea name="" id="overview" cols="" rows="6" class="col-12"></textarea>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="card-footer d-flex justify-content-end row">
+                <button class="btn btn-success col-lg-2 col-sm-12 mt-sm-2 mt-2 m-lg-2">Create</button>
+                <button class="btn btn-warning col-lg-2 col-sm-12 mt-sm-2 mt-2 m-lg-2">Clean</button>
+            </div>
+       </div>
+    </main>
     <!--delete css browser styles-->
     <script src="./assets/js/site/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="./assets/js/lib/bootstrap.min.js"></script>
 </body>
 </html>
