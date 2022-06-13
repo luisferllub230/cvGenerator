@@ -2,3 +2,12 @@
     border-left: 2px dashed black;
     padding-left: 30px;
 }
+
+
+@media screen and (max-width: 991px) {
+    .my-content-left{
+        border-left: none;
+        padding-left: 0;
+    }
+    
+}
