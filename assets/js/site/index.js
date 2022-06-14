@@ -73,5 +73,12 @@ function validation(){
 }
 
 function clean(){
+    const listClean = {0: named,1: lastName,2: address,3: email,4: phone,5: website,6: language,7: jobs,8: educations,9: skills,10: certifications,11: overview}
 
+    for(i in listClean){
+        listClean[i].value=""
+        listClean[i].classList.remove("validationTrue")
+        listClean[i].classList.remove("validationFalse")
+        listClean[0].focus()
+    }
 }
