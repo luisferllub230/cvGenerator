@@ -11,3 +11,14 @@
     }
     
 }
+
+
+.validationFalse{
+    border: 3px solid rgb(247, 10, 10);
+    color: rgb(247, 10, 10);
+}
+
+.validationTrue{
+    border: 3px solid rgb(5, 182, 5);
+    color: rgb(5, 182, 5);
+}
