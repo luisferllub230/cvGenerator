@@ -180,7 +180,7 @@ function createCv(){
         divCol7M5P0.setAttribute("class","col-7 mt-5 p-0")
 
         const divcol7summry = document.createElement("div")
-        divcol7summry.setAttribute("class","col7-summary")
+        divcol7summry.setAttribute("class","col7-summary ps-4")
 
         const f3tH3 = document.createElement("h3")
         f3tH3.setAttribute("class","mt-4 mb-0 ms-2 me-2 fs-2 text-primary")
@@ -194,7 +194,7 @@ function createCv(){
         p5.innerText = `${valueOverview}`
 
         const divcol7Skills = document.createElement("div")
-        divcol7Skills.setAttribute("class","col7-skills")
+        divcol7Skills.setAttribute("class","col7-skills ps-4")
 
         const f4tH3 = document.createElement("h3")
         f4tH3.setAttribute("class","mt-4 mb-0 ms-2 me-2 fs-2 text-primary")
@@ -212,7 +212,7 @@ function createCv(){
         const ul1 = separateComma(valueSkills,2)
         
         const divjobs = document.createElement("div")
-        divjobs.setAttribute("class","col7-jobs")
+        divjobs.setAttribute("class","col7-jobs ps-4")
 
         const f5tH3 = document.createElement("h3")
         f5tH3.setAttribute("class","mt-4 mb-0 ms-2 me-2 fs-2 text-primary")
@@ -230,7 +230,7 @@ function createCv(){
         const ul2 = separateComma(valueJobs,2)
 
         const divCol5Educations = document.createElement("div")
-        divCol5Educations.setAttribute("class","col5-contact")
+        divCol5Educations.setAttribute("class","col5-contact ps-4")
 
         const f6tH3 = document.createElement("h3")
         f6tH3.setAttribute("class","mt-4 mb-0 ms-2 me-2 fs-2 text-primary")
@@ -244,7 +244,7 @@ function createCv(){
         p6.innerText = `${separateComma(valueEducations,1)}`
 
         const divCol5Certification = document.createElement("div")
-        divCol5Certification.setAttribute("class","col5-contact")
+        divCol5Certification.setAttribute("class","col5-contact ps-4")
 
         const f7tH3 = document.createElement("h3")
         f7tH3.setAttribute("class","mt-4 mb-0 ms-2 me-2 fs-2 text-primary")
@@ -299,13 +299,12 @@ function createCv(){
         divcol7summry.appendChild(f3tH3)
         divcol7summry.appendChild(hr3)
         divcol7summry.appendChild(p5)
-        divCol7M5P0.appendChild(divcol7Skills)//bug in skills 
+        divCol7M5P0.appendChild(divcol7Skills)
         divcol7Skills.appendChild(f4tH3)
         divcol7Skills.appendChild(hr4)
         divcol7Skills.appendChild(divrow)
         divrow.appendChild(divlist1) 
         divlist1.appendChild(ul1)
-
         divCol7M5P0.appendChild(divjobs)
         divjobs.appendChild(f5tH3)
         divjobs.appendChild(hr5)
