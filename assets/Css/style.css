@@ -12,7 +12,6 @@
     
 }
 
-
 .validationFalse{
     border: 3px solid rgb(247, 10, 10);
     color: rgb(247, 10, 10);
@@ -25,4 +24,14 @@
 
 .cv-border{
     border: 3px solid black;
+}
+
+.text-color{
+    color:rgb(30, 57, 93);
+}
+.background-blue1{
+    background-color: rgb(55, 97, 147);
+}
+.background-blue2{
+    background-color: rgb(38, 64, 97);
 }

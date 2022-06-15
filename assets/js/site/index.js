@@ -114,25 +114,25 @@ function createCv(){
         divCol5P0.setAttribute("class", "col-5 p-0")
 
         const divBackBlue = document.createElement("div")
-        divBackBlue.setAttribute("class", "background-blue bg-info")
+        divBackBlue.setAttribute("class", "background-blue1")
 
         const br1 = document.createElement("br")
         const br2 = document.createElement("br")
         const br3 = document.createElement("br")
 
         const firstH1 = document.createElement("h1")
-        firstH1.setAttribute("class","mt-3 mb-1 ms-2 me-2 fs-2 text-primary")
+        firstH1.setAttribute("class","mt-3 mb-1 ms-2 me-2 fs-2 text-color ps-4 pe-5")
         firstH1.innerText=`${valueNamed}`
 
         const firstH2 = document.createElement("h2")
-        firstH2.setAttribute("class","mt-3 mb-1 ms-2 me-2 fs-2 text-primary")
+        firstH2.setAttribute("class","mt-3 mb-1 ms-2 me-2 fs-2 text-color ps-4 pe-5")
         firstH2.innerText=`${valueLastName}`
 
         const divCol5Contact = document.createElement("div")
-        divCol5Contact.setAttribute("class","col5-contact")
+        divCol5Contact.setAttribute("class","col5-contact ps-4 pe-5")
 
         const firstH3 = document.createElement("h3")
-        firstH3.setAttribute("class","mt-4 mb-0 ms-2 me-2 fs-2 text-primary")
+        firstH3.setAttribute("class","mt-4 mb-0 ms-2 me-2 fs-2 text-color")
         firstH3.innerText="Contact:"
 
         const hr1 = document.createElement("hr")
@@ -163,10 +163,10 @@ function createCv(){
         p3.innerText = `${valueEmail}`
 
         const divCol5Languages = document.createElement("div")
-        divCol5Languages.setAttribute("class","col5-contact")
+        divCol5Languages.setAttribute("class","col5-language ps-4 pe-5")
 
         const f2tH3 = document.createElement("h3")
-        f2tH3.setAttribute("class","mt-4 mb-0 ms-2 me-2 fs-2 text-primary")
+        f2tH3.setAttribute("class","mt-4 mb-0 ms-2 me-2 fs-2 text-color")
         f2tH3.innerText ="Languages:"
 
         const hr2 = document.createElement("hr")
@@ -180,10 +180,10 @@ function createCv(){
         divCol7M5P0.setAttribute("class","col-7 mt-5 p-0")
 
         const divcol7summry = document.createElement("div")
-        divcol7summry.setAttribute("class","col7-summary ps-4")
+        divcol7summry.setAttribute("class","col7-summary ps-4 pe-5")
 
         const f3tH3 = document.createElement("h3")
-        f3tH3.setAttribute("class","mt-4 mb-0 ms-2 me-2 fs-2 text-primary")
+        f3tH3.setAttribute("class","mt-4 mb-0 ms-2 me-2 fs-2 text-color")
         f3tH3.innerText ="Summary:"
 
         const hr3 = document.createElement("hr")
@@ -194,10 +194,10 @@ function createCv(){
         p5.innerText = `${valueOverview}`
 
         const divcol7Skills = document.createElement("div")
-        divcol7Skills.setAttribute("class","col7-skills ps-4")
+        divcol7Skills.setAttribute("class","col7-skills ps-4 pe-5")
 
         const f4tH3 = document.createElement("h3")
-        f4tH3.setAttribute("class","mt-4 mb-0 ms-2 me-2 fs-2 text-primary")
+        f4tH3.setAttribute("class","mt-4 mb-0 ms-2 me-2 fs-2 text-color")
         f4tH3.innerText ="Skills:"
 
         const hr4 = document.createElement("hr")
@@ -212,10 +212,10 @@ function createCv(){
         const ul1 = separateComma(valueSkills,2)
         
         const divjobs = document.createElement("div")
-        divjobs.setAttribute("class","col7-jobs ps-4")
+        divjobs.setAttribute("class","col7-jobs ps-4 pe-5")
 
         const f5tH3 = document.createElement("h3")
-        f5tH3.setAttribute("class","mt-4 mb-0 ms-2 me-2 fs-2 text-primary")
+        f5tH3.setAttribute("class","mt-4 mb-0 ms-2 me-2 fs-2 text-color")
         f5tH3.innerText ="Jobs:"
 
         const divrow2 = document.createElement("div")
@@ -230,10 +230,10 @@ function createCv(){
         const ul2 = separateComma(valueJobs,2)
 
         const divCol5Educations = document.createElement("div")
-        divCol5Educations.setAttribute("class","col5-contact ps-4")
+        divCol5Educations.setAttribute("class","col5-contact ps-4 pe-5")
 
         const f6tH3 = document.createElement("h3")
-        f6tH3.setAttribute("class","mt-4 mb-0 ms-2 me-2 fs-2 text-primary")
+        f6tH3.setAttribute("class","mt-4 mb-0 ms-2 me-2 fs-2 text-color")
         f6tH3.innerText ="Educations:"
 
         const hr6 = document.createElement("hr")
@@ -244,10 +244,10 @@ function createCv(){
         p6.innerText = `${separateComma(valueEducations,1)}`
 
         const divCol5Certification = document.createElement("div")
-        divCol5Certification.setAttribute("class","col5-contact ps-4")
+        divCol5Certification.setAttribute("class","col5-contact ps-4 pe-5")
 
         const f7tH3 = document.createElement("h3")
-        f7tH3.setAttribute("class","mt-4 mb-0 ms-2 me-2 fs-2 text-primary")
+        f7tH3.setAttribute("class","mt-4 mb-0 ms-2 me-2 fs-2 text-color")
         f7tH3.innerText ="Certifications:"
 
         const hr7 = document.createElement("hr")
@@ -258,11 +258,11 @@ function createCv(){
         p7.innerText = `${separateComma(valueCertifications,1)}`
 
         const f8tH3 = document.createElement("h3")
-        f8tH3.setAttribute("class","fs-6 mt-5")
+        f8tH3.setAttribute("class","fs-6 mt-5  pe-5 ps-4")
         f8tH3.innerText =`for more information visit My web site ${valueWebSite}`
 
         const divFinal = document.createElement("div")
-        divFinal.setAttribute("class","background-blue bg-info")
+        divFinal.setAttribute("class","background-blue2")
         
         const br4 = document.createElement("br")
         const br5 = document.createElement("br")
@@ -291,8 +291,8 @@ function createCv(){
         divCol5Contact.appendChild(p3)
         divCol5P0.appendChild(divCol5Languages)
         divCol5Languages.appendChild(f2tH3)
-        divCol5P0.appendChild(hr2)
-        divCol5P0.appendChild(p4)
+        divCol5Languages.appendChild(hr2)
+        divCol5Languages.appendChild(p4)
 
         divRowBgWithe.appendChild(divCol7M5P0)
         divCol7M5P0.appendChild(divcol7summry)
