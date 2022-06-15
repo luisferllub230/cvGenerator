@@ -22,3 +22,7 @@
     border: 3px solid rgb(5, 182, 5);
     color: rgb(5, 182, 5);
 }
+
+.cv-border{
+    border: 3px solid black;
+}
