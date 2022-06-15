@@ -325,9 +325,20 @@ function createCv(){
         divFinal.appendChild(br5)
         divFinal.appendChild(br6)
 
-        
-        
+        const btn = document.createElement("button")
+        btn.setAttribute("class", "m-2 btn btn-danger")
+        btn.innerText ="Delete"
+        btn.addEventListener("click", function(){
+            if(confirm("Do you want to delete this cv?")){
+                cvContainer.removeChild(divContainerMt5)
+                cvContainer.removeChild(btn)
+            }
+        })
+        cvContainer.appendChild(btn)
 
+        
+        
+        clean();
     }else{
         alert("PLEASE - check the rectangles red")
     }
