@@ -303,14 +303,16 @@ function createCv(){
         divcol7Skills.appendChild(f4tH3)
         divcol7Skills.appendChild(hr4)
         divcol7Skills.appendChild(divrow)
-        divrow.appendChild(divlist1)
+        divrow.appendChild(divlist1) 
         divlist1.appendChild(ul1)
+
         divCol7M5P0.appendChild(divjobs)
         divjobs.appendChild(f5tH3)
         divjobs.appendChild(hr5)
-        divjobs.appendChild(divrow)
+        divjobs.appendChild(divrow2)
         divrow2.appendChild(divlist2)
         divlist2.appendChild(ul2)
+
         divCol7M5P0.appendChild(divCol5Educations)
         divCol5Educations.appendChild(f6tH3)
         divCol5Educations.appendChild(hr6)
@@ -340,6 +342,6 @@ function createCv(){
         
         clean();
     }else{
-        alert("PLEASE - check the rectangles red")
+        alert("PLEASE - check the red rectangles")
     }
 }
