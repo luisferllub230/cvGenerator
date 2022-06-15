@@ -299,7 +299,7 @@ function createCv(){
         divcol7summry.appendChild(f3tH3)
         divcol7summry.appendChild(hr3)
         divcol7summry.appendChild(p5)
-        divCol7M5P0.appendChild(divcol7Skills)//bug in skills
+        divCol7M5P0.appendChild(divcol7Skills)//bug in skills 
         divcol7Skills.appendChild(f4tH3)
         divcol7Skills.appendChild(hr4)
         divcol7Skills.appendChild(divrow)
