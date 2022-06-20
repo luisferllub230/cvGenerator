@@ -63,15 +63,15 @@
                             <input type="text" id="certification" placeholder="Business, Technology, Legal..." class="col-12">
 
                             <label for="overview" class="mt-2">My overview:</label><br>
-                            <textarea name="" id="overview" cols="" rows="6" class="col-12"></textarea>
+                            <textarea  id="overview" cols="" rows="6" class="col-12"></textarea>
 
                         </div>
                     </div>
 
                 </div>
                 <div class="card-footer row d-flex justify-content-end bg-white mt-2">
-                    <button onclick="createCv()" class="btn btn-success col-lg-2 ms-lg-1 mb-lg-0 col-sm-12 mt-sm-2 mt-2">Create</button>
-                    <button onclick="clean()" class="btn btn-warning col-lg-2 ms-lg-1 mb-lg-0 col-sm-12 mt-sm-2 mt-2">Clean</button>
+                    <button id="createBtn" class="btn btn-success col-lg-2 ms-lg-1 mb-lg-0 col-sm-12 mt-sm-2 mt-2">Create</button>
+                    <button id="cleanBtn" class="btn btn-warning col-lg-2 ms-lg-1 mb-lg-0 col-sm-12 mt-sm-2 mt-2">Clean</button>
                 </div>
             </div>
        </div>
@@ -92,8 +92,8 @@
         </div>
     </footer>
 
-    
-    <script src="../assets/js/site/index.js"></script>
+    <script src="../assets/js/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/site/indexjq.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="../assets/js/lib/bootstrap.min.js"></script>
 </body>
