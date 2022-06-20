@@ -14,7 +14,7 @@ const overview = document.getElementById("overview");
 
 //validation
 function validation(){ 
-    let validationEmpty, validateEmail, validation = false; 
+    let validationEmpty = false, validateEmail = false, validation = false; 
 
     const valueNamed = named.value, valueLastName = lastName.value, valueAddress = address.value, valueEmail = email.value,valuePhone = phone.value,valueWebSite = website.value,valueLanguage = language.value,valueJobs = jobs.value,valueEducations = educations.value,valueSkills = skills.value,valueCertifications = certifications.value,valueOverview = overview.value;
    
@@ -35,16 +35,15 @@ function validation(){
 
     //to validate that it is not empty
     for(i in listValidation){
-        for(j in listValidation){            
-            if(listValidation[i][1] == "" || listValidation[i][1] == null || listValidation[i][1] == undefined){
-                listValidation[i][0].classList.add("validationFalse")
-                listValidation[i][0].classList.remove("validationTrue")
-            }
-            else{
-                listValidation[i][0].classList.remove("validationFalse")
-                listValidation[i][0].classList.add("validationTrue")
-                validationEmpty = true;
-            }
+        if(listValidation[i][1] == "" || listValidation[i][1] == null || listValidation[i][1] == undefined){
+            listValidation[i][0].classList.add("validationFalse")
+            listValidation[i][0].classList.remove("validationTrue")
+            validationEmpty = false;
+        }
+        else{
+            listValidation[i][0].classList.remove("validationFalse")
+            listValidation[i][0].classList.add("validationTrue")
+            validationEmpty = true;
         }
     }
 
@@ -57,15 +56,20 @@ function validation(){
         email.classList.remove("validationFalse")
         email.classList.add("validationTrue")
         validateEmail = true;
-    }
-    else{
+    }else{
         email.classList.remove("validationTrue")
         email.classList.add("validationFalse")
+        validateEmail = false
     }
 
 
-    validationEmpty && validateEmail ? validation=true : validation=false;
-    return validation
+    if(validationEmpty){
+        if(validateEmail){
+            return validation = true
+        }
+    }else{
+        return validation = false
+    }
 }
 
 function clean(){
@@ -159,7 +163,7 @@ function createCv(){
         h43.innerText="Email:"
 
         const p3 = document.createElement("p")
-        p3.setAttribute("class","mt-1 mb-1 ms-2 me-2")
+        p3.setAttribute("class","mt-1 mb-1 ms-2 me-5")
         p3.innerText = `${valueEmail}`
 
         const divCol5Languages = document.createElement("div")
